@@ -2,22 +2,23 @@
 <h2>Coke-related Message Updates</h2>
 
 <p>Keywords: coke / coca-cola / diet-cola</p>
-<p>Coke Percentage: x%</p>
+<p>Coke Percentage: <%= @coke_percentage %>%</p>
 
 <table>
   <tr>
-    <th>ID</th>
+    <th>Source ID</th>
     <th>Message</th>
     <th>Sentiment</th>
   </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
+  <% @updates.each do |update| %>
+    <tr>
+      <%= update.source_id %>
+    </tr>
+    <tr>
+      <%= update.message %>
+    </tr>
+    <tr>
+      <%= update.sentiment %>
+    </tr>
+  <% end %>
 </table>
