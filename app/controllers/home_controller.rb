@@ -3,4 +3,8 @@ class HomeController < ApplicationController
     @updates = Update.all
     @coke_percentage = 90
   end
+
+  def show
+    @update = Update.find(params[:id])
+  end
 end
