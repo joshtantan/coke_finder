@@ -12,13 +12,15 @@
   </tr>
   <% @updates.each do |update| %>
     <tr>
-      <%= update.source_id %>
-    </tr>
-    <tr>
-      <%= update.message %>
-    </tr>
-    <tr>
-      <%= update.sentiment %>
+      <td>
+        <%= update.source_id %>
+      </td>
+      <td>
+        <%= update.message %>
+      </td>
+      <td>
+        <%= update.sentiment %>
+      </td>
     </tr>
   <% end %>
 </table>
