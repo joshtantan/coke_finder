@@ -1,24 +1,24 @@
-# README
+# coke_finder
+Jungle is an eCommerce web application for a basic online store built with Ruby on Rails including user and admin login, user registration, and credit card checkout via the Stripe API.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Language & Dependencies
+- `ruby` v2.6.6p146
+- `rails` v6.1.3
+- `pg` v1.1
+- `faraday` v0.9.2
+## Initialization
+> All commands are run from the project root directory
+1. Install all dependencies
+```shell
+$ bundle i
+```
+2. Initialize local databse
+```shell
+$ rake db:setup
+```
+## Runtime
+> All commands are run from the project root directory
+1. Start the web server
+```shell
+$ rails s
+```
