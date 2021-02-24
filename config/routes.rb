@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root "home#main"
-  get "/updates/:id", to: "home#show"
+  resources :updates, only: [:index, :show], controller: "home"
 end
