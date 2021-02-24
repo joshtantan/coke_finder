@@ -1,5 +1,5 @@
 # coke_finder
-Jungle is an eCommerce web application for a basic online store built with Ruby on Rails including user and admin login, user registration, and credit card checkout via the Stripe API.
+coke_finder is a web application built with Ruby on Rails that serves coke-related data from a Twitter-like API by matching specific keywords
 
 ## Language & Dependencies
 - `ruby` v2.6.6p146
