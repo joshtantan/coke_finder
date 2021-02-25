@@ -4,7 +4,7 @@ coke_finder is a web application built with Ruby on Rails that serves coke-relat
 ## Final Product
 
 ### Home
-!["Screenshot of Home"](https://github.com/joshtantan/coke_finder/blob/main/images/home.png) 
+!["Screenshot of Home"](https://github.com/joshtantan/coke_finder/blob/main/images/homepage.png) 
 
 ### Message Update
 !["Screenshot of Message Update"](https://github.com/joshtantan/coke_finder/blob/main/images/update.png) 
