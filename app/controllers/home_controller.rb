@@ -2,10 +2,13 @@ class HomeController < ApplicationController
   def index
     @updates = Update.all.order(sentiment: :desc)
 
-    total = Update.all.count
+    total = 0.0
+    total += Update.all.count
+
     coke = Update.all.where("message LIKE ?", "%coke%").count
     coke += Update.all.where("message LIKE ?", "%coca-cola%").count
     coke += Update.all.where("message LIKE ?", "%diet-cola%").count
+
     @coke_percentage = coke / total * 100
   end
 
